@@ -13,6 +13,8 @@
 
 //CODE HERE
 
+const helloWorld="Hello World!";
+console.log(helloWorld);
 
 ////////////////// PROBLEM 2 ////////////////////
 
