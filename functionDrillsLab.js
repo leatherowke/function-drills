@@ -13,8 +13,15 @@
 
 //CODE HERE
 
-const helloWorld="Hello World!";
-console.log(helloWorld);
+function helloWorld(intro){
+  return String('Hello, World!')
+
+};
+const intro =  helloWorld();
+console.log(intro);
+
+
+
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -24,6 +31,8 @@ console.log(helloWorld);
 
 //CODE HERE
 
+//jsNinja = () => "I am a JavaScript ninja!"
+//console.log(jsNinja);
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -33,6 +42,7 @@ console.log(helloWorld);
 */
 
 //CODE HERE
+
 
 
 ////////////////// PROBLEM 4 ////////////////////
@@ -47,6 +57,10 @@ console.log(helloWorld);
 */
 
 //CODE HERE
+//const greeting = (name) => {
+//const stringName = string(name);
+//console.log('hello', ${stringName} )
+//};
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -81,8 +95,8 @@ console.log(helloWorld);
   Uncomment the answer underneath.
 */
 
-const exclaim = function(str) {
-  return str.toUpperCase() + '!!!'
+function exclaim(str) {
+  return str.toUpperCase() + '!!!';
 }
 
 // arrow
