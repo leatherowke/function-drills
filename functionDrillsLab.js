@@ -4,6 +4,8 @@
   feel free to practice with any syntax.
 */
 
+const { json } = require("stream/consumers");
+
 
 ////////////////// PROBLEM 1 ////////////////////
 /*
@@ -13,12 +15,11 @@
 
 //CODE HERE
 
-function helloWorld(intro){
-  return String('Hello, World!')
-
+function helloWorld(){
+  console.log('Hello, World!')
 };
-const intro =  helloWorld();
-console.log(intro);
+
+helloWorld();
 
 
 
@@ -30,6 +31,12 @@ console.log(intro);
 */
 
 //CODE HERE
+
+const jsNinja = () => "I am a Javascript Ninja!";
+
+
+//const jsNinja = () => String( 'I am a Javascript Ninja!')
+//console.log(jsNinja);
 
 //jsNinja = () => "I am a JavaScript ninja!"
 //console.log(jsNinja);
@@ -43,7 +50,10 @@ console.log(intro);
 
 //CODE HERE
 
-
+function printName(name) {
+  console.log(name)
+};
+printName('Cameron');
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -56,11 +66,11 @@ console.log(intro);
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
-//const greeting = (name) => {
-//const stringName = string(name);
-//console.log('hello', ${stringName} )
-//};
+CODE HERE
+const greeting = (name) => {
+const stringName = string(name);
+console.log('hello', ${stringName} )
+};
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -76,6 +86,17 @@ console.log(intro);
 
 //CODE HERE
 
+ compareNumbs = (num1, num2) => {
+  if ( num 1 > num 2){
+    return num 1
+  };
+  else{
+    return num 2
+  };
+};
+const biggerNum = compareNumbs(1, 3);
+console.log(biggerNum);
+
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -86,7 +107,13 @@ console.log(intro);
 */
 
 //CODE HERE
+function add( num1, num2){
+  num1 = +num1
+  num2 = +num2
+  return num1 + num2
+};
 
+let sum = add(1, 2);
 
 ////////////////// PROBLEM 7 ////////////////////
 
