@@ -4,6 +4,7 @@
   feel free to practice with any syntax.
 */
 
+const { title } = require("process");
 const { json } = require("stream/consumers");
 
 
@@ -127,7 +128,7 @@ function exclaim(str) {
 }
 
 // arrow
-// declaration
+ declaration
 // expression
 
 
@@ -143,9 +144,9 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+ arrow
 // declaration
-// expression
+ //expression
 
 /*
   Rewrite exclaimTwo to be a single line.
@@ -154,7 +155,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
-
+const exclaimTwo = (str) => str.toUpperCase() + '!!!';
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -168,7 +169,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+ declaration
 // expression
 
 
@@ -183,6 +184,17 @@ function exclaimFour(str) {
 
 //CODE HERE
 
+function nameCheck(name) {
+  if(name === 'steven'){
+    return 'what is up Steven?'
+  }
+  if else(name = 'Bryan'){
+     return 'hey Bryan!'
+  }
+  else {
+    return 'cool name, ${name}'
+  }
+}
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -196,6 +208,21 @@ function exclaimFour(str) {
 
 //CODE HERE
 
+function faveColorFinder(color) {
+  if (color === 'red'){
+    return 'red is a great color'
+  }
+  else if (color === 'green'){
+    return 'green is a solid favorite color'
+  }
+  else if (color === 'black'){
+    return 'so trendy'
+  }
+  else{
+    return 'you need to evaluate your favorite color choice'
+  }
+};
+let colorRating = faveColorFinder('red');
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -207,6 +234,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+function printAllNames (names){
+for( let i = 0; i< namesArr.length; i++) {
+  console.log (names[i])
+}
+};
+printAllNames(namesArr);
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -218,6 +251,14 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+function thatsOdd (number){
+  if( num % 2 === 0){
+    return 'thats not odd!'
+  }
+  else{
+    return 'that is odd indeed!'
+  }
+};
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -230,6 +271,8 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+
+const bestMovie = (title) => `${title} is the best movie ever!`
 
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -244,6 +287,18 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+
+function bigOrSmall (arr) {
+  let answers = []
+  for(let i = 0; i < bigOrSmallArray.length; i++)
+  if(arr[i] > 100){
+answers.push('big')
+  }
+  else{
+    answers.push('small')
+  }
+  return answers
+};
 
 
 ////////////////// PROBLEM 16 ////////////////////
